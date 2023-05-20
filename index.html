@@ -9,16 +9,30 @@
 
 <!-- Sidebar on click -->
 <nav>
-  <a href="#">Link 1</a>
+    <span>Nav: </span>
+  <a href="#emailExamples">Email Examples</a>
+  <a href="#footer">Bottom</a>
 </nav>
 
 <div>
-    <div>
+    <section id="emailExamples">
         <h1>
             <a href="https://www.w3docs.com/snippets/html/how-to-create-mailto-links.html#:~:text=%3Ca%20href%3D%22mailto%3Aemail%40example.com%3Fcc%3Dsecondemail%40example.com%2C%20anotheremail%40example.com%2C%20%26bcc%3Dlastemail%40example.com%26subject%3DMail%20from%20our%20Website%22%3ESend%20Email%3C%2Fa%3E,text%2C%20use%20the%20%22body%22%20parameter%20with%20other%20parameters%3A">
                 Email Examples
             </a>
         </h1>
+        <h2>How it Works</h2>
+        <p>
+            There are several key elements to the structure:
+            <ul>
+                <li>The HTML code for the anchor tag itself: <b>&lt;a href=""&gt;This is what shows on the page&lt;/a&gt;</b></li>
+                <li>Everything that is needed goes inside the <b>"href"</b> attribute</li>
+                <li>The format looks like: <b>mailto:to-field?subject=email-subject&cc=cc-field&bcc=bcc-field&body=body-text</b></li>
+                <li>to,cc, and bcc fields can have multiple email address, comma separated</li>
+                <li>subject and body fields should be url encoded, you can write out what you want and encode it using this tool: <a target="_blank" href="https://www.urlencoder.io/">URL Encoder</a></li>
+            </ul>
+        </p>
+        <h2>Examples</h2>
         <ul>
             <li>
                 <a href="mailto:demo@email.com?subject=Tutor: Math&body=This is the body%0D%0A">Click for math tutoring</a>
@@ -26,12 +40,15 @@
             <li>
                 <a href="mailto:demo@email.com?subject=Tutor: English&body=This is the body%0D%0A">Click for english tutoring</a>
             </li>
-        </ul>  
+            <li>
+                <a href="mailto:demo@email.com?cc=demo-cc@email.com&bcc=demo-bcc@email.com&subject=Tutor:%20Writing%20HTML&body=Please%20provide%20the%20following%20information%3A%0A1.%20Dates%20and%20times%20you%20prefer%0A2.%20Any%20specific%20questions%20or%20problems%0A3.%20Any%20other%20helpful%20info%0A%0A">Click for writing html tutoring</a>
+            </li>
+        </ul> 
     </div>
 </div>
 
 <!-- Footer -->
-<footer>
+<footer id="footer">
   
 </footer>
 
